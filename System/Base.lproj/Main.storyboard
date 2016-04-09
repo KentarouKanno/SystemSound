@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aPv-MX-X7n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Vibrate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="System" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFM-ub-3Xa">
+                                <rect key="frame" x="127" y="264" width="66" height="40"/>
+                                <color key="backgroundColor" red="0.99756394680000005" green="1" blue="0.69852773700000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="fYd-Oc-RCu"/>
+                                    <constraint firstAttribute="height" constant="40" id="jmc-Se-IhV"/>
+                                </constraints>
+                                <state key="normal" title="Vibrate"/>
+                                <connections>
+                                    <action selector="aaa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6v-FV-lub"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YFM-ub-3Xa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFx-vS-0C0"/>
+                            <constraint firstItem="YFM-ub-3Xa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RnE-V1-Fh5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vibrate" id="9m5-gp-J7W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ux9-Tc-XND">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aPv-MX-X7n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cP4-4e-OFh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Ot-XT-JpY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJ7-IP-M5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="406"/>
+        </scene>
+    </scenes>
+</document>
