@@ -12,6 +12,7 @@ import AudioToolbox
 class ViewController: UIViewController {
     
     @IBAction func aaa(sender: AnyObject) {
+        // Call AudioService API
         AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
